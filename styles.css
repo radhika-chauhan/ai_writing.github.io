@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 2%;
+    font-family: 'Arial';
+    background-color: #f4f4f9;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color:chartreuse;
+}
+
+h1, p {
+    text-align: center;
+    color: #333;
+    /* display: block;
+    margin-top: 10px; */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.box {
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    background-color:rgb(41, 41, 41);
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    color: chartreuse;
+    font-size: 25px;
+}
+
+/* .box:nth-child(1) {
+    background-color: rgb(250, 117, 139);
+}
+
+.box:nth-child(2) {
+    background-color: rgb(255, 56, 56);
+}
+
+.box:nth-child(3) {
+    background-color: rgb(201, 97, 243);
+}
+
+.box:nth-child(4) {
+    background-color: rgb(255, 130, 72);
+} */
+
+
+
+/* Keyframes for Possible Animations */
+
+/* Scale Up */
+@keyframes scaleUp {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(1); }
+}
+
+/* Rotate */
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Bounce */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+}
+
+/* Wiggle */
+@keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(15deg); }
+    75% { transform: rotate(-15deg); }
+}
+
+/* Fade */
+@keyframes fade {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+/* Slide */
+@keyframes slide {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(100px); }
+}
